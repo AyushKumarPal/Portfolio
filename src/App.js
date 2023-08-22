@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Intro from './components/Intro';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -13,9 +13,9 @@ function App() {
   return (  
     <>
     <BrowserRouter>
-    <Navbar/>
+    <Header/>
     <Routes>
-      <Route path="/home" element={
+      <Route path="/" element={
       <>
         <Intro />
         <Skills/>
